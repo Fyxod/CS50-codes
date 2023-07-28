@@ -20,7 +20,7 @@ int main(void)
 
     // TODO: Calculate number of years until we reach threshold
     int count = 0;
-    for(int i = start; i <= end; count++ )
+    for(int i = start; i < end; count++ )
     {
         i = i+ (i/3) - (i/4);
     }
