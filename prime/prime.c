@@ -18,14 +18,17 @@ int main(void)
         max = get_int("Maximum: ");
     }
     while (min >= max);
+    int count = 0;
 
     for (int i = min; i <= max; i++)
     {
         if (prime(i))
         {
+            count++;
             printf("%d\n", i);
         }
     }
+    printf("%d\n", count);
 }
 
 bool prime(int number)
