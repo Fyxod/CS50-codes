@@ -23,7 +23,7 @@ int main(void)
     {
         if (prime(i))
         {
-            printf("%i\n", i);
+            printf("%d\n", i);
         }
     }
 }
