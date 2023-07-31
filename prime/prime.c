@@ -24,11 +24,9 @@ int main(void)
     {
         if (prime(i))
         {
-            count++;
             printf("%d\n", i);
         }
     }
-    printf("%d\n", count);
 }
 
 bool prime(int number)
@@ -37,7 +35,7 @@ bool prime(int number)
     int count = 0;
     for (int i = 1; i <= number; i++)
     {
-        if(number%i==0)
+        if ( number % i==0 )
         {
             count++;
         }
