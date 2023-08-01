@@ -20,7 +20,10 @@ int main(void)
                 printf(" ");
         }
         printf(" ");
-        for()
+        for (int y = (h-1); y >= i; --y)
+            {
+                printf("#");
+            }
         printf("\n");
     }
 }
