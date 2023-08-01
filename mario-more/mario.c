@@ -19,7 +19,7 @@ int main(void)
             else
                 printf(" ");
         }
-        printf(" ");
+        printf("  ");
         for (int y = (h-1); y >= i; --y)
             {
                 printf("#");
