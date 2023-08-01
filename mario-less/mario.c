@@ -3,7 +3,12 @@
 
 int main(void)
 {
-   int h = get_int("height: ");
+    int h;
+   do
+   {
+    h = get_int("height: ");
+   }
+   while(h > 8 || h < 1);
 
    for (int i = (h - 1); i >= 0; i--)
    {
