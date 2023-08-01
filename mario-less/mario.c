@@ -5,5 +5,5 @@ int main(void)
 {
    int h = get_int("height: ");
 
-   for(int )
+   for(int i = (h - 1); i>0
 }
