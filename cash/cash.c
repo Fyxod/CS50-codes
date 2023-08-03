@@ -62,6 +62,7 @@ int calculate_nickels(int cents)
 {
     int q = cents/5;
     return q;
+}
 
 int calculate_pennies(int cents)
 {
