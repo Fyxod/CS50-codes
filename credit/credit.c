@@ -26,7 +26,7 @@ int main(void)
 
     if(sum%10==0)
     {
-        printf("Visa\n");
+        printf("VISA\n");
     }
     else
     {
