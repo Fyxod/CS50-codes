@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
+int SumOfDigits(int h);
 int main(void)
 {
     long n;
@@ -29,7 +30,7 @@ int main(void)
     }
     else
     {
-        printf("invalid\n")
+        printf("invalid\n");
     }
 }
 
