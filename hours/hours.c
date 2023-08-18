@@ -34,7 +34,7 @@ float calc_hours(int hours[], int weeks, char output)
     }
 
     float average = sum / weeks;
-    if(output == 'A')
+    if (output == 'A')
     {
         return average;
     }
