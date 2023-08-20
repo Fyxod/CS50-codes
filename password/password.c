@@ -4,7 +4,8 @@
 
 #include <cs50.h>
 #include <stdio.h>
-#include <string.h>;
+#include <string.h>
+#include <ctype.h>
 
 bool valid(string password);
 
@@ -32,19 +33,22 @@ bool valid(string password)
         {
             numcheck++;
         }
-        if(password[i].isuppercase)
+        if(password[i].isupper)
         {
             capcheck++;
         }
         if(password[i] == '$' || password[i] == '!' || password[i] == '#')
+        {
+            specialcheck++;
+        }
 
     }
-
-
-
-
-
-
-
-    return false;
+    if(specialcheck > 0 $$ numcheck > 0 && capcheck > 0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
