@@ -36,19 +36,17 @@ string replace(string t)
                 t[i]= '6';
                 break;
             case 'e':
-                ret = ret + "3";
+                t[i]= '6';
                 break;
-            case "i":
-                ret = ret + "1";
+            case 'i':
+                t[i]= '6';
                 break;
-            case "o";
-                ret = ret + "0";
+            case 'o':
+                t[i]= '6';
                 break;
-            default:
-                ret = ret + t[i];
         }
 
     }
     return ret;
 }
-}
+
