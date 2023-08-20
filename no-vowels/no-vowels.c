@@ -5,6 +5,7 @@
 
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
 
 string replace(string t);
 
@@ -24,5 +25,5 @@ int main(int argc, string argv[])
 }
 string replace(string t)
 {
-    
+    for()
 }
