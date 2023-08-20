@@ -20,7 +20,7 @@ int main(int argc, string argv[])
     }
     else
     {
-        printf("You didn't type anything after ee")
+        printf("You didn't type anything after exe")
     }
 }
 string replace(string t)
