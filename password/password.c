@@ -41,7 +41,7 @@ bool valid(string password)
         {
             specialcheck++;
         }
-        if (lower(password[i]))
+        if (islower(password[i]))
         {
             lowcheck++;
         }
