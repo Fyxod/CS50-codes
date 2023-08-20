@@ -47,6 +47,7 @@ bool valid(string password)
         }
 
     }
+    printf("%i %i %i %i/n", specialcheck, numcheck, capcheck, lowcheck);
     if (specialcheck > 0 && numcheck > 0 && capcheck > 0 && lowcheck > 0)
     {
         return true;
