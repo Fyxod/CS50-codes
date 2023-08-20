@@ -17,6 +17,10 @@ int main(int argc, string argv[])
     string new = replace(argv[1]);
 
     printf
-    
+    }
+    else
+    {
+        printf
+    }
 }
 string replace(string t)
