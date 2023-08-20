@@ -25,5 +25,18 @@ int main(int argc, string argv[])
 }
 string replace(string t)
 {
-    for()
+    string ret = "";
+    string len = strlen(t);
+    for(int i = 0; i < strlen; i++)
+    {
+        switch(t[i]);
+        {
+            case "a":
+                ret = ret + "6";
+                break;
+            case "e":
+                ret = ret + 
+
+        }
+    }
 }
