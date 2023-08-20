@@ -16,6 +16,7 @@ int main(int argc, string argv[])
 
         string new = replace(argv[1]);
         printf("%s", new);
+        return 0;
     }
     else
     {
@@ -35,8 +36,19 @@ string replace(string t)
                 ret = ret + "6";
                 break;
             case "e":
-                ret = ret + 
-
+                ret = ret + "3";
+                break;
+            case "i":
+                ret = ret + "1";
+                break;
+            case "o";
+                ret = ret + "0";
+                break;
+            default:
+                ret = ret + t[i];
         }
+
     }
+    return ret;
+}
 }
