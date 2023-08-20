@@ -26,6 +26,7 @@ int main(int argc, string argv[])
 }
 string replace(string t)
 {
+    printf("%s", t);
     string ret = "";
     int len = strlen(t);
     for(int i = 0; i < len; i++)
