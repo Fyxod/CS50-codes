@@ -28,7 +28,10 @@ bool valid(string password)
     int len = strlen(password);
     for(int i = 0; i < len; i++)
     {
-        if()
+        if(password[i] >= '0' && password[i] <= '1')
+        {
+            numcheck+
+        }
     }
 
 
