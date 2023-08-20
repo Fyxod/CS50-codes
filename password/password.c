@@ -25,7 +25,7 @@ int main(void)
 // TODO: Complete the Boolean function below
 bool valid(string password)
 {
-    int numcheck = 0, capcheck = 0, specialcheck = 0;
+    int numcheck = 0, capcheck = 0, lowcheck = 0, specialcheck = 0;
     int len = strlen(password);
     for (int i = 0; i < len; i++)
     {
@@ -41,9 +41,13 @@ bool valid(string password)
         {
             specialcheck++;
         }
+        if (lower(password[i]))
+        {
+            lowcheck++;
+        }
 
     }
-    if (specialcheck > 0 && numcheck > 0 && capcheck > 0)
+    if (specialcheck > 0 && numcheck > 0 && capcheck > 0 && lowcheck > 0)
     {
         return true;
     }
