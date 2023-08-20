@@ -27,10 +27,10 @@ int main(int argc, string argv[])
 string replace(string t)
 {
     string ret = "";
-    string len = strlen(t);
-    for(int i = 0; i < strlen; i++)
+    int len = strlen(t);
+    for(int i = 0; i < len; i++)
     {
-        switch(t[i]);
+        switch(t[i])
         {
             case "a":
                 ret = ret + "6";
