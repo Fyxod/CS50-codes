@@ -27,23 +27,23 @@ bool valid(string password)
 {
     int numcheck, capcheck, specialcheck = 0;
     int len = strlen(password);
-    for(int i = 0; i < len; i++)
+    for (int i = 0; i < len; i++)
     {
-        if(password[i] >= '0' && password[i] <= '1')
+        if (password[i] >= '0' && password[i] <= '1')
         {
             numcheck++;
         }
-        if(password[i].isupper)
+        if (isupper(password[i]))
         {
             capcheck++;
         }
-        if(password[i] == '$' || password[i] == '!' || password[i] == '#')
+        if (password[i] == '$' || password[i] == '!' || password[i] == '#')
         {
             specialcheck++;
         }
 
     }
-    if(specialcheck > 0 $$ numcheck > 0 && capcheck > 0)
+    if (specialcheck > 0 && numcheck > 0 && capcheck > 0)
     {
         return true;
     }
