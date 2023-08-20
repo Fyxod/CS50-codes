@@ -6,7 +6,17 @@
 #include <cs50.h>
 #include <stdio.h>
 
+string replace(string t);
+
 int main(int argc, string argv[])
 {
+    if(argc == 2)
+    {
+
+
+    string new = replace(argv[1]);
+
+    printf
     
 }
+string replace(string t)
