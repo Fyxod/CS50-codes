@@ -32,7 +32,12 @@ bool valid(string password)
         {
             numcheck++;
         }
-        
+        if(password[i].isuppercase)
+        {
+            capcheck++;
+        }
+        if(password[i] == '$' || password[i] == '!' || password[i] == '#')
+
     }
 
 
