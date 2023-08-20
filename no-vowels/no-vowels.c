@@ -33,9 +33,9 @@ string replace(string t)
         switch(t[i])
         {
             case 'a':
-                ret = ret + "6";
+                t[i]= '6';
                 break;
-            case "e":
+            case 'e':
                 ret = ret + "3";
                 break;
             case "i":
