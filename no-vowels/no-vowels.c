@@ -32,7 +32,7 @@ string replace(string t)
     {
         switch(t[i])
         {
-            case "a":
+            case 'a':
                 ret = ret + "6";
                 break;
             case "e":
