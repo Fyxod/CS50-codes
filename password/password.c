@@ -3,9 +3,9 @@
 // Practice using the ctype library
 
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 
 bool valid(string password);
 
@@ -29,7 +29,7 @@ bool valid(string password)
     int len = strlen(password);
     for (int i = 0; i < len; i++)
     {
-        if (password[i] >= '0' && password[i] <= '1')
+        if (password[i] >= '0' && password[i] <= '9')
         {
             numcheck++;
         }
@@ -45,7 +45,6 @@ bool valid(string password)
         {
             lowcheck++;
         }
-
     }
     printf("%i %i %i %i/n", specialcheck, numcheck, capcheck, lowcheck);
     if (specialcheck > 0 && numcheck > 0 && capcheck > 0 && lowcheck > 0)
