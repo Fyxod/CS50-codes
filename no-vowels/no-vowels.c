@@ -15,7 +15,7 @@ int main(int argc, string argv[])
     {
 
         string new = replace(argv[1]);
-        printf("%s", new);
+        printf("%s\n", new);
         return 0;
     }
     else
@@ -26,7 +26,6 @@ int main(int argc, string argv[])
 }
 string replace(string t)
 {
-    printf("%s", t);
     string ret = "";
     int len = strlen(t);
     for(int i = 0; i < len; i++)
@@ -37,17 +36,17 @@ string replace(string t)
                 t[i]= '6';
                 break;
             case 'e':
-                t[i]= '6';
+                t[i]= '3';
                 break;
             case 'i':
-                t[i]= '6';
+                t[i]= '1';
                 break;
             case 'o':
-                t[i]= '6';
+                t[i]= '0';
                 break;
         }
 
     }
-    return ret;
+    return t;
 }
 
