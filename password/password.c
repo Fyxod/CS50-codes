@@ -30,8 +30,9 @@ bool valid(string password)
     {
         if(password[i] >= '0' && password[i] <= '1')
         {
-            numcheck+
+            numcheck++;
         }
+        
     }
 
 
