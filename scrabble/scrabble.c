@@ -31,7 +31,7 @@ int main(void)
     }
     else
     {
-        printf("Tie!");
+        printf("Tie!\n");
     }
 }
 
@@ -39,11 +39,12 @@ int compute_score(string word)
 {
     int len = strlen(word);
     int score = 0;
-
     for(int i = 0; i < len; i++)
     {
         if(word[i] >= 'a' && word[i] <= 'z')
         {
+            printf("%i", word[i] - 65);
+
             score = score + POINTS[(word[i] - 65)];
         }
         if(word[i] >= 'A' && word[i] <= 'Z')
