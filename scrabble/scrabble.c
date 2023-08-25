@@ -43,12 +43,12 @@ int compute_score(string word)
     {
         if(word[i] >= 'a' && word[i] <= 'z')
         {
-            printf("%i", word[i] - 65);
-
+            printf("%i\n", word[i] - 65);
             score = score + POINTS[(word[i] - 65)];
         }
         if(word[i] >= 'A' && word[i] <= 'Z')
         {
+            printf("%i\n", word[i] - 97);
             score = score + POINTS[(word[i] - 97)];
         }
     }
