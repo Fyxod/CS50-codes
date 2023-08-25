@@ -42,11 +42,11 @@ int compute_score(string word)
 
     for(int i = 0; i < len; i++)
     {
-        if(islower(word[i]))
+        if(word[i] >= 'a' && word[i] <= 'z')
         {
             score = score + POINTS[(word[i] - 65)];
         }
-        if(isupper(word[i]))
+        if(word[i] >= 'A' && word[i] <= 'Z')
         {
             score = score + POINTS[(word[i] - 97)];
         }
