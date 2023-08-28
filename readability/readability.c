@@ -27,7 +27,7 @@ int main(void)
         level = abs + 1;
     }
 
-    printf("Grade %i %lf\n", level, index);
+    printf("Grade %i %lf %lf %lf \n", level, index, L, S);
 }
 
 int count_letters(string s)
