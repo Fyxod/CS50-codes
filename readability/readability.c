@@ -1,5 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 
 int main(void)
 {
@@ -25,5 +27,23 @@ int main(void)
 
 int count_letters(string s)
 {
-    
+    int len = strlen(s);
+    int count = 0;
+    for(int i = 0; i < len; i++)
+    {
+        if((s[i] <= 'z' && s[i] >= 'a') || (s[i] <= 'Z' && s[i] >= 'A'))
+        {
+            count++;
+        }
+    }
+    return count;
+}
+
+int count_words(string s)
+{
+    int len = strlen(s);
+    int count = 0;
+    for(int i = 0; i < len; i++)
+    {
+        if(
 }
