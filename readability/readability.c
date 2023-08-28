@@ -26,9 +26,11 @@ int main(void)
     {
         level = abs + 1;
     }
-
-    printf("Grade %i\n", level);
-}
+    if(level>15)
+    {
+        printf("Grade 16+\n");
+    }
+    else if(level<1)
 
 int count_letters(string s)
 {
