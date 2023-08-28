@@ -62,7 +62,7 @@ int count_sent(string s)
 {
     int len = strlen(s);
     int count = 0;
-    for (int i = 0; i < len-1; i++)
+    for (int i = 0; i < len; i++)
     {
         if (s[i] == '.' || s[i] == '?' || s[i] == '!')
         {
