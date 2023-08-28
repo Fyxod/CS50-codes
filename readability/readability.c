@@ -32,7 +32,7 @@ int main(void)
     }
     else if(level<1)
     {
-        printf("Before Grade 1");
+        printf("Before Grade 1\n");
     }
     else
     {
