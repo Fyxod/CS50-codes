@@ -9,5 +9,10 @@ int main(void)
     int sentences = count_sent(str);
     double L = (letters/words) * 100;
     double S = (sentences/words) * 100;
-    
+    double index = 0.0588 * L - 0.296 * S - 15.8;
+    int abs = (int)index;
+    if((index-abs) < 0.5)
+    {
+        
+    }
 }
