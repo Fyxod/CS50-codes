@@ -1,7 +1,7 @@
 #include <cs50.h>
+#include <ctype.h>
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 
 int count_letters(string s);
 int count_words(string s);
@@ -13,12 +13,12 @@ int main(void)
     int letters = count_letters(str);
     int words = count_words(str);
     int sentences = count_sent(str);
-    double L = ((float)letters/words) * 100;
-    double S = ((float)sentences/words) * 100;
+    double L = ((float) letters / words) * 100;
+    double S = ((float) sentences / words) * 100;
     double index = 0.0588 * L - 0.296 * S - 15.8;
-    int abs = (int)index;
+    int abs = (int) index;
     int level;
-    if ((index-abs) < 0.5)
+    if ((index - abs) < 0.5)
     {
         level = abs;
     }
@@ -26,11 +26,11 @@ int main(void)
     {
         level = abs + 1;
     }
-    if(level>15)
+    if (level > 15)
     {
         printf("Grade 16+\n");
     }
-    else if(level<1)
+    else if (level < 1)
     {
         printf("Before Grade 1\n");
     }
@@ -58,14 +58,14 @@ int count_words(string s)
 {
     int len = strlen(s);
     int count = 0;
-    for (int i = 0; i < len-1; i++)
+    for (int i = 0; i < len - 1; i++)
     {
-        if (s[i] == ' ' && s[i+1] != ' ')
+        if (s[i] == ' ' && s[i + 1] != ' ')
         {
             count++;
         }
     }
-    return count+1;
+    return count + 1;
 }
 
 int count_sent(string s)
