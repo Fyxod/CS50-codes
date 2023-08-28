@@ -67,6 +67,6 @@ int count_sent(string s)
         {
             count++;
         }
-        return count;
     }
+    return count;
 }
