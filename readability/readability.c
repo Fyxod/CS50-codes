@@ -11,8 +11,19 @@ int main(void)
     double S = (sentences/words) * 100;
     double index = 0.0588 * L - 0.296 * S - 15.8;
     int abs = (int)index;
+    int level;
     if((index-abs) < 0.5)
     {
-        
+        level = abs;
     }
+    else
+    {
+        level = abs + 1;
+    }
+    printf("Grade %i", level);
+}
+
+int count_letters(string s)
+{
+    
 }
