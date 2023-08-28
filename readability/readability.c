@@ -36,8 +36,9 @@ int main(void)
     }
     else
     {
-        printf("Grade %i)
+        printf("Grade %i\n", level);
     }
+}
 
 int count_letters(string s)
 {
