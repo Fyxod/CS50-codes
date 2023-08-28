@@ -13,8 +13,8 @@ int main(void)
     int letters = count_letters(str);
     int words = count_words(str);
     int sentences = count_sent(str);
-    double L = (letters/words) * 100;
-    double S = (sentences/words) * 100;
+    double L = ((float)letters/words) * 100;
+    double S = ((float)sentences/words) * 100;
     double index = 0.0588 * L - 0.296 * S - 15.8;
     int abs = (int)index;
     int level;
@@ -27,7 +27,7 @@ int main(void)
         level = abs + 1;
     }
 
-    printf("Grade %i %lf %lf %lf %i %i %i\n", level, index, L, S, sentences, words, letters);
+    printf("Grade %i, \n", level);
 }
 
 int count_letters(string s)
