@@ -9,7 +9,14 @@ void print_bulb(int bit);
 int main(void)
 {
     string str = get_string("Message: ");
-    
+    int len = strlen(str);
+    for(int i = 0; i < len; i++)
+    {
+        char c = str[i];
+        int v = (int) c;
+        int b = bin(v);
+    }
+
 }
 
 void print_bulb(int bit)
