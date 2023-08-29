@@ -15,6 +15,7 @@ int main(void)
         char c = str[i];
         int v = (int) c;
         int b = bin(v);
+        
     }
 
 }
