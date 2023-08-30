@@ -27,10 +27,8 @@ int main(void)
                 print_bulb(bit);
                 b = b % pow (10,i);
             }
-
-
+            printf("\n");
     }
-
 }
 
 void print_bulb(int bit)
@@ -45,4 +43,19 @@ void print_bulb(int bit)
         // Light emoji
         printf("\U0001F7E1");
     }
+}
+
+int intlen(int a)
+{
+    int count = 0;
+    for(int i = a; i>0; i/=10)
+    {
+        count++;
+    }
+    return count;
+}
+
+int bin(int a)
+{
+    
 }
