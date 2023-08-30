@@ -15,7 +15,18 @@ int main(void)
         char c = str[i];
         int v = (int) c;
         int b = bin(v);
-        
+        int len = intlen(b);
+        int left = BITS_IN_BYTE - len;
+        for(int i = 0; i < left; i++)
+        {
+            print_bulb(0);
+        }
+        for(int i = len-1; i > 0; i--)
+        {
+            int bit = b/(pow(10,len))
+        }
+
+
     }
 
 }
