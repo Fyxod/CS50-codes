@@ -21,9 +21,9 @@ int main(void)
         {
             print_bulb(0);
         }
-        for(int i = len-1; i > 0; i--)
+        for(int i = 0; i < len; i++)
         {
-            int bit = b/(pow(10,len))
+            int bit = b / (pow (10,len));
         }
 
 
