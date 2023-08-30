@@ -58,5 +58,9 @@ int intlen(int a)
 int bin(int a)
 {
     int f = 1;
-    for()
+    int place = 10;
+    for(int i = a; i > 0; i/=2)
+    {
+        
+    }
 }
