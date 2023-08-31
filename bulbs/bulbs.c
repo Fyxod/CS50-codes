@@ -1,9 +1,11 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
-
+#include <math.h>
 const int BITS_IN_BYTE = 8;
 
+int intlen(int a);
+int bin(int a);
 void print_bulb(int bit);
 
 int main(void)
@@ -15,19 +17,20 @@ int main(void)
         char c = str[i];
         int v = (int) c;
         int b = bin(v);
-        int len = intlen(b);
-        int left = BITS_IN_BYTE - len;
-        for(int i = 0; i < left; i++)
+        int leng = intlen(b);
+        int left = BITS_IN_BYTE - leng;
+        for(int y = 0; y < left; y++)
         {
             print_bulb(0);
 
-            for(int i = len-1; i >= 0; i--)
+            for(int j = leng-1; j >= 0; j--)
             {
-                int bit = b / (pow (10,i));
+                int bit = b / (pow (10,j));
                 print_bulb(bit);
-                b = b % pow (10,i);
+                b = b % (int)pow (10,j);
             }
             printf("\n");
+    }
     }
 }
 
@@ -58,9 +61,11 @@ int intlen(int a)
 int bin(int a)
 {
     int f = 1;
-    int place = 10;
+    int place = 1;
     for(int i = a; i > 0; i/=2)
     {
-        
+        f = f + ((i % 2) * place);
+        place *= 10;
     }
+    return f;
 }
