@@ -15,9 +15,11 @@ int main(void)
     for(int i = 0; i < len; i++)
     {
         char c = str[i];
+        printf("%c",c)
         int v = (int) c;
         int b = bin(v);
         int leng = intlen(b);
+        printf("%i", len);
         int left = BITS_IN_BYTE - leng;
         for(int y = 0; y < left; y++)
         {
