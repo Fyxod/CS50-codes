@@ -15,7 +15,7 @@ int main(void)
     for(int i = 0; i < len; i++)
     {
         char c = str[i];
-        printf("%c",c)
+        printf("%c",c);
         int v = (int) c;
         int b = bin(v);
         int leng = intlen(b);
