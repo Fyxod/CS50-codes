@@ -25,6 +25,7 @@ int main(void)
         for(int y = 0; y < left; y++)
         {
             print_bulb(0);
+        }
 
             for(int j = leng-1; j >= 0; j--)
             {
@@ -33,7 +34,7 @@ int main(void)
                 b = b % (int)pow (10,j);
             }
             printf("\n");
-    }
+
     }
 }
 
