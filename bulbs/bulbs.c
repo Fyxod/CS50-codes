@@ -30,6 +30,7 @@ int main(void)
             for(int j = leng-1; j >= 0; j--)
             {
                 int bit = b / (pow (10,j));
+                printf("%i", bit);
                 print_bulb(bit);
                 b = b % (int)pow (10,j);
             }
