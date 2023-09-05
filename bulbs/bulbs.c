@@ -16,8 +16,8 @@ int main(void)
     {
         char c = str[i];
         int v = (int) c;
-        printf("%i", v);
         int b = bin(v);
+        printf("%i", b);
         int leng = intlen(b);
         int left = BITS_IN_BYTE - leng;
         for(int y = 0; y < left; y++)
