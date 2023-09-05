@@ -12,23 +12,23 @@ int main(void)
 {
     string str = get_string("Message: ");
     int len = strlen(str);
-    for(int i = 0; i < len; i++)
+    for (int i = 0; i < len; i++)
     {
         char c = str[i];
         int v = (int) c;
         int b = bin(v);
         int leng = intlen(b);
         int left = BITS_IN_BYTE - leng;
-        for(int y = 0; y < left; y++)
+        for (int y = 0; y < left; y++)
         {
             print_bulb(0);
         }
 
-            for(int j = leng-1; j >= 0; j--)
+            for (int j = leng-1; j >= 0; j--)
             {
-                int bit = b / (pow (10,j));
+                int bit = b / (pow (10 , j));
                 print_bulb(bit);
-                b = b % (int)pow (10,j);
+                b = b % (int) pow (10 , j);
             }
             printf("\n");
 
@@ -52,7 +52,7 @@ void print_bulb(int bit)
 int intlen(int a)
 {
     int count = 0;
-    for(int i = a; i>0; i/=10)
+    for(int i = a; i>0; i /= 10)
     {
         count++;
     }
@@ -63,7 +63,7 @@ int bin(int a)
 {
     int f = 0;
     int place = 1;
-    for(int i = a; i > 0; i/=2)
+    for(int i = a; i > 0; i /= 2)
     {
         f = f + ((i % 2) * place);
         place *= 10;
