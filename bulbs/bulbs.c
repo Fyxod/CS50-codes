@@ -21,6 +21,7 @@ int main(void)
         int leng = intlen(b);
         printf("%i", len);
         int left = BITS_IN_BYTE - leng;
+        printf("%i", left);
         for(int y = 0; y < left; y++)
         {
             print_bulb(0);
