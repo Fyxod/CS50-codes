@@ -15,13 +15,10 @@ int main(void)
     for(int i = 0; i < len; i++)
     {
         char c = str[i];
-        printf("%c",c);
         int v = (int) c;
         int b = bin(v);
         int leng = intlen(b);
-        printf("%i", len);
         int left = BITS_IN_BYTE - leng;
-        printf("%i", left);
         for(int y = 0; y < left; y++)
         {
             print_bulb(0);
@@ -30,7 +27,6 @@ int main(void)
             for(int j = leng-1; j >= 0; j--)
             {
                 int bit = b / (pow (10,j));
-                printf("%i", bit);
                 print_bulb(bit);
                 b = b % (int)pow (10,j);
             }
