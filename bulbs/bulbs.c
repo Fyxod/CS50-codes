@@ -17,7 +17,6 @@ int main(void)
         char c = str[i];
         int v = (int) c;
         int b = bin(v);
-        printf("%i", b);
         int leng = intlen(b);
         int left = BITS_IN_BYTE - leng;
         for(int y = 0; y < left; y++)
@@ -61,7 +60,7 @@ int intlen(int a)
 
 int bin(int a)
 {
-    int f = 1;
+    int f = 0;
     int place = 1;
     for(int i = a; i > 0; i/=2)
     {
