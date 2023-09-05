@@ -1,7 +1,7 @@
 #include <cs50.h>
+#include <math.h>
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
 const int BITS_IN_BYTE = 8;
 
 int intlen(int a);
@@ -24,14 +24,13 @@ int main(void)
             print_bulb(0);
         }
 
-            for (int j = leng-1; j >= 0; j--)
-            {
-                int bit = b / (pow (10 , j));
-                print_bulb(bit);
-                b = b % (int) pow (10 , j);
-            }
-            printf("\n");
-
+        for (int j = leng - 1; j >= 0; j--)
+        {
+            int bit = b / (pow(10, j));
+            print_bulb(bit);
+            b = b % (int) pow(10, j);
+        }
+        printf("\n");
     }
 }
 
@@ -52,7 +51,7 @@ void print_bulb(int bit)
 int intlen(int a)
 {
     int count = 0;
-    for(int i = a; i>0; i /= 10)
+    for (int i = a; i > 0; i /= 10)
     {
         count++;
     }
@@ -63,7 +62,7 @@ int bin(int a)
 {
     int f = 0;
     int place = 1;
-    for(int i = a; i > 0; i /= 2)
+    for (int i = a; i > 0; i /= 2)
     {
         f = f + ((i % 2) * place);
         place *= 10;
