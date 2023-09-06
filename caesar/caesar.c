@@ -30,13 +30,9 @@ bool iskey(string key)
     int len = strlen(key);
     for(int i = 0; i < len; i++)
     {
-        if(key[i] >= '0' && key[i] <= '9')
+        if(!(key[i] >= '0' && key[i] <= '9'))
         {
-            return 1;
-        }
-        else
-        {
-            return 0;
+            count++;
         }
     }
 }
