@@ -40,7 +40,7 @@ bool iskey(string key)
             count++;
         }
     }
-    printf("i\n", count);
+    printf("%i\n", count);
     if(count > 0)
     {
         return 0;
