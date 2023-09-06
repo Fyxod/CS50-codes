@@ -70,7 +70,7 @@ string changex(string str, int key)
             if((str[i] + key) > 'z')
             {
                 key = key - ('z' - str[i]);
-                str[i] = 'a' + key;
+                str[i] = 'z' + key;
             }
             else
             {
