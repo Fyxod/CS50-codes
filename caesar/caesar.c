@@ -28,6 +28,7 @@ int main(int argc, string argv[])
 bool iskey(string key)
 {
     int len = strlen(key);
+    int count = 0;
     for(int i = 0; i < len; i++)
     {
         if(!(key[i] >= '0' && key[i] <= '9'))
@@ -35,4 +36,9 @@ bool iskey(string key)
             count++;
         }
     }
+    if(count > 0)
+    {
+        return 0;
+    }
+    else if()
 }
