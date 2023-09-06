@@ -25,5 +25,6 @@ int main(int argc, string argv[])
 
 bool iskey(string key)
 {
+    int k = atoi(key);
     
 }
