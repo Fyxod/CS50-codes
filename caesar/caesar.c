@@ -15,7 +15,7 @@ int main(int argc, string argv[])
     {
         if(iskey(argv[1]))
         {
-            new = change(get_string("Plaintext:  "));
+            new = change((get_string("Plaintext:  "), argv));
             printf("ciphertext: %s", new);
         }
         else
