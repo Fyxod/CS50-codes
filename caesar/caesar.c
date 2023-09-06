@@ -19,7 +19,7 @@ int main(int argc, string argv[])
     {
         if(iskey(argv[1]))
         {
-            new = changex((get_string("Plaintext:  ")), atoi(argv[1])));
+            new = changex((get_string("Plaintext:  ")), atoi(argv[1]));
             printf("ciphertext: %s", new);
         }
         else
