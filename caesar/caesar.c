@@ -32,7 +32,11 @@ bool iskey(string key)
     {
         if(key[i] >= '0' && key[i] <= '9')
         {
-            
+            return 1;
+        }
+        else
+        {
+            return 0;
         }
     }
 }
