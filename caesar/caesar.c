@@ -5,7 +5,10 @@ int main(int argc, string argv[])
 {
     if(argc != 1)
     {
-        printf("Usage: ./caesar key");
+        printf("Enter something good");
     }
-    
+    else
+    {
+        
+    }
 }
