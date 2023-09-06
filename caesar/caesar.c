@@ -61,7 +61,7 @@ string changex(string str, int key)
     int len = strlen(str);
     if(key > 26)
     {
-        key = key - 26;
+        key = key % 26;
     }
     for(int i = 0; i < len; i++)
     {
