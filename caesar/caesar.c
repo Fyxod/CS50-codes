@@ -57,8 +57,8 @@ string change(string str, key)
     {
         if((str[i] >='a' && str[i] <= 'z') || (str[i] >='A' && str[i] <= 'z'))
         {
-            char c = str[i];
-            
+            str[i] += key;
         }
     }
+    return str;
 }
