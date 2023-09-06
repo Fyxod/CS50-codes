@@ -10,6 +10,8 @@ int main(int argc, string argv[])
     }
     else
     {
-        
+        char c = (char)argv[1];
+        int d = (int)c;
+        printf("%i", c);
     }
 }
