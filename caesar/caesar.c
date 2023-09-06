@@ -10,7 +10,8 @@ string changex(string str, int key);
 int main(int argc, string argv[])
 {
     string new;
-    if(argc != 1)
+    printf("%i", argc);
+    if(argc != 2)
     {
         printf("Usage: ./caesar key\n");
         return 1;
