@@ -45,3 +45,12 @@ bool iskey(string key)
         return 1;
     }
 }
+
+string change(string str, key)
+{
+    int len = strlen(str)
+    for(int i = 0; i < len; i++)
+    {
+        if(str)
+    }
+}
