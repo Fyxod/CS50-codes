@@ -3,6 +3,9 @@
 #include <string.h>
 #include <ctype.h>
 
+bool iskey(string key);
+string change(string str, int key);
+
 int main(int argc, string argv[])
 {
     string new;
@@ -46,7 +49,7 @@ bool iskey(string key)
     }
 }
 
-string change(string str, key)
+string change(string str, int key)
 {
     int len = strlen(str)
     if(key > 26)
