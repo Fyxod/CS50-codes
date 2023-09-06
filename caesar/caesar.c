@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 bool iskey(string key);
-string change(string str, int key);
+string changex(string str, int key);
 
 int main(int argc, string argv[])
 {
@@ -19,7 +19,7 @@ int main(int argc, string argv[])
     {
         if(iskey(argv[1]))
         {
-            new = change((get_string("Plaintext:  "), atoi(argv[1])));
+            new = changex((get_string("Plaintext:  ")), atoi(argv[1])));
             printf("ciphertext: %s", new);
         }
         else
@@ -50,7 +50,7 @@ bool iskey(string key)
     }
 }
 
-string change(string str, int key)
+string changex(string str, int key)
 {
     int len = strlen(str)
     if(key > 26)
