@@ -3,6 +3,7 @@
 
 int main(int argc, string argv[])
 {
+    
     if(argc != 1)
     {
         printf("Enter something good");
@@ -10,8 +11,9 @@ int main(int argc, string argv[])
     }
     else
     {
-        char c = (char)argv[1];
-        int d = (int)c;
-        printf("%i", c);
+        if(iskey(argv[1]))
+        {
+
+        }
     }
 }
