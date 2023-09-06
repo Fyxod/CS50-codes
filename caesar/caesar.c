@@ -3,7 +3,7 @@
 
 int main(int argc, string argv[])
 {
-    
+    string new;
     if(argc != 1)
     {
         printf("Enter something good");
@@ -13,7 +13,17 @@ int main(int argc, string argv[])
     {
         if(iskey(argv[1]))
         {
-
+            new = change(get_string("Plaintext:  "));
+            printf("ciphertext: %s", new);
+        }
+        else
+        {
+            printf("Usage: ./caesar key");
         }
     }
+}
+
+bool iskey(string key)
+{
+    
 }
