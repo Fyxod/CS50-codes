@@ -15,7 +15,7 @@ int main(int argc, string argv[])
     {
         if(iskey(argv[1]))
         {
-            new = change((get_string("Plaintext:  "), argv));
+            new = change((get_string("Plaintext:  "), atoi(argv[1])));
             printf("ciphertext: %s", new);
         }
         else
@@ -40,5 +40,8 @@ bool iskey(string key)
     {
         return 0;
     }
-    else if()
+    else if(atoi(key) >= 0)
+    {
+        return 1;
+    }
 }
