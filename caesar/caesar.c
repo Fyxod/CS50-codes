@@ -12,7 +12,7 @@ int main(int argc, string argv[])
     string new;
     if(argc != 1)
     {
-        printf("Enter something good");
+        printf("Usage: ./caesar key\n");
         return 1;
     }
     else
@@ -20,11 +20,11 @@ int main(int argc, string argv[])
         if(iskey(argv[1]))
         {
             new = changex((get_string("Plaintext:  ")), atoi(argv[1]));
-            printf("ciphertext: %s", new);
+            printf("ciphertext: %s\n", new);
         }
         else
         {
-            printf("Usage: ./caesar key");
+            printf("Usage: ./caesar key\n");
         }
     }
 }
@@ -48,11 +48,15 @@ bool iskey(string key)
     {
         return 1;
     }
+    else
+    {
+        return 0;
+    }
 }
 
 string changex(string str, int key)
 {
-    int len = strlen(str)
+    int len = strlen(str);
     if(key > 26)
     {
         key = key - 26;
