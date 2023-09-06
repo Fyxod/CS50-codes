@@ -49,8 +49,15 @@ bool iskey(string key)
 string change(string str, key)
 {
     int len = strlen(str)
+    if(key > 26)
+    {
+        key = key - 26;
+    }
     for(int i = 0; i < len; i++)
     {
-        if(str)
+        if(str[i] >='a' && str[i] <= 'z')
+        {
+
+        }
     }
 }
