@@ -45,5 +45,22 @@ string change(string old, string key)
 
 bool keycheck(string key)
 {
-    int len = 
+    int len = strlen(key);
+    if(len != 26)
+    {
+        printf("Key must contain 26 characters.")
+        return 0;
+    }
+    else
+    {
+        for(int i = 0; i < len; i++)
+        {
+            if(!((key[i] <= 'z' && key[i] >= 'a') || (key[i] <= 'Z' && key[i] >= 'A')))
+            {
+                printf("Usage: ./substitution key");
+                return 0;
+                break;
+            }
+        }
+    }
 }
