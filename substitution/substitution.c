@@ -30,9 +30,20 @@ string change(string old, string key)
     {
         if(old[i] <='z' && old[i] >= 'a')
         {
-            int temp = (int)old[i] - 97
+            int temp = (int)old[i] - 97;
             old[i] = tolower(key[temp]);
+        }
+        if(old[i] <='Z' && old[i] >= 'A')
+        {
+            int temp = (int)old[i] - 65;
+            old[i] = toupper(key[temp]);
         }
 
     }
+    return old;
+}
+
+bool keycheck(string key)
+{
+    int len = 
 }
