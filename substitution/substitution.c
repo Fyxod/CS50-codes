@@ -26,6 +26,7 @@ int main(int argc, string argv[])
             return 1;
         }
 
+    }
 }
 
 string change(string old, string key)
@@ -53,7 +54,7 @@ bool keycheck(string key)
     int len = strlen(key);
     if(len != 26)
     {
-        printf("Key must contain 26 characters.")
+        printf("Key must contain 26 characters.");
         return 0;
     }
     else
