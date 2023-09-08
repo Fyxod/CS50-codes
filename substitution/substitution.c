@@ -28,6 +28,9 @@ string change(string old, string key)
     int len = strlen(old);
     for(int i = 0; i < len; i++)
     {
-        
+        if(old[i] <='z' && old[i] >= 'a')
+        {
+            
+        }
     }
 }
