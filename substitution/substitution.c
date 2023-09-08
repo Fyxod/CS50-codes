@@ -67,6 +67,7 @@ bool keycheck(string key)
                 return 0;
                 break;
             }
+            for
         }
         return 1;
     }
