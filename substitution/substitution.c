@@ -1,5 +1,10 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+string change(string old, string key);
+bool keycheck(string key);
 
 int main(int argc, string argv[])
 {
@@ -62,5 +67,6 @@ bool keycheck(string key)
                 break;
             }
         }
+        return 1;
     }
 }
