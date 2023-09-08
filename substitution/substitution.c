@@ -18,7 +18,7 @@ int main(int argc, string argv[])
     {
         if(keycheck(argv[1]))
         {
-            new = change(get_string("plaintext:  \n"), argv[1]);
+            new = change(get_string("plaintext:  "), argv[1]);
             printf("Ciphertext: %s\n", new);
         }
         else
@@ -54,7 +54,7 @@ bool keycheck(string key)
     int len = strlen(key);
     if(len != 26)
     {
-        printf("Key must contain 26 characters.");
+        printf("Key must contain 26 characters.\n");
         return 0;
     }
     else
@@ -63,7 +63,7 @@ bool keycheck(string key)
         {
             if(!((key[i] <= 'z' && key[i] >= 'a') || (key[i] <= 'Z' && key[i] >= 'A')))
             {
-                printf("Usage: ./substitution key");
+                printf("Usage: ./substitution key\n");
                 return 0;
                 break;
             }
