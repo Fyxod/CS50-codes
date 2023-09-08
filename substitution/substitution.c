@@ -65,9 +65,8 @@ bool keycheck(string key)
             {
                 printf("Usage: ./substitution key\n");
                 return 0;
-                break;
             }
-            for
+
         }
         return 1;
     }
