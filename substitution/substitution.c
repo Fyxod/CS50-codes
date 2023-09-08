@@ -66,14 +66,18 @@ bool keycheck(string key)
                 printf("Usage: ./substitution key\n");
                 return 0;
             }
+            int c = 0;
             for(int j = 0; j < len; j++)
             {
                 if(tolower(key[j]) == tolower(key[i]))
                 {
-                    return 0;
+                    c++;
                 }
             }
-
+            if(c > 1)
+            {
+                return 0;
+            }
         }
         return 1;
     }
