@@ -31,8 +31,8 @@ string change(string old, string key)
         if(old[i] <='z' && old[i] >= 'a')
         {
             int temp = (int)old[i] - 97
-            old[i] = key[temp];
+            old[i] = tolower(key[temp]);
         }
-        
+
     }
 }
