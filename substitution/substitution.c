@@ -19,7 +19,7 @@ int main(int argc, string argv[])
         if(keycheck(argv[1]))
         {
             new = change(get_string("plaintext:  "), argv[1]);
-            printf("Ciphertext: %s\n", new);
+            printf("ciphertext: %s\n", new);
         }
         else
         {
