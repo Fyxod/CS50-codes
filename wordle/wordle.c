@@ -108,7 +108,8 @@ int main(int argc, string argv[])
         }
     }
 
-    if(wom) // TODO #7
+    // Print the game's result
+    // TODO #7
 
     // that's all folks!
     return 0;
@@ -116,7 +117,12 @@ int main(int argc, string argv[])
 
 string get_guess(int wordsize)
 {
-    string guess = "";
+    do
+    {
+        string guess = get_string("Input a %i-letter word: ", wordsize);
+    }
+    while(strlen())
+
 
     // ensure users actually provide a guess that is the correct length
     // TODO #3
